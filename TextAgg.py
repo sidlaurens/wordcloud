@@ -37,12 +37,8 @@ class TextAgg:
                     self.extract_string = line
                     self.extract_string = self.extract_string.replace('“','"').replace('”','"')
                     self.extract_string = self.extract_string.translate(str.maketrans('', '', string.punctuation))
-                    # for character in string:
-                    #     if character in punctuations:
-                    #         string = string.replace(character, "")
                     for word in self.extract_string.lower().split():
                         self.word_list.append(word)
-        # word_list.append(extract_string.lower().split())
         except OSError as error:
             print(error.strerror)
             print(f"File path given: {self.full_path}")
