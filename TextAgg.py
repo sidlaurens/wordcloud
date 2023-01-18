@@ -66,26 +66,3 @@ class TextAgg:
                 self.frequency_count[word]=1
         
         return self.frequency_count
-
-
-# word_pile = file_contents.lower().split()
-
-
-# for word in word_pile:
-#     if word.isnumeric():
-#         continue
-#     while not word.isalpha():
-#         for punctuation in punctuations:
-#             if punctuation in word:
-#                 # print(f"{punctuation} in {word}")
-#                 word = word.replace(punctuation, "")
-#                 break
-#     # print(f"word is now: {word}")
-#     if word in uninteresting_words:
-#         continue
-#     elif word in frequency_count.keys():
-#         frequency_count[word]+=1
-#     else:
-#         frequency_count[word]=1
-
-# print(frequency_count)
